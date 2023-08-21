@@ -1,13 +1,19 @@
 import Link from "next/link";
 import React, { FC } from "react";
 import SectionContainer from "./SectionContainer.component";
+import { ndot47 } from "@/utils/font-loader";
 
 interface Props {
   // TODO - allow nav links customization
 }
 
-const NavBar: FC<Props> = () => {
-  const links = [
+export interface NavLink {
+  name: string;
+  href: string;
+}
+
+const NavBar: FC<Props> = ({}) => {
+  const links: NavLink[] = [
     {name: "About", href: "#about"},
     {name: "Events", href: "#events"},
     {name: "Sponsors", href: "#sponsors"},
@@ -23,9 +29,9 @@ const NavBar: FC<Props> = () => {
         id="navbar-container"
         className="flex-row justify-between items-center my-4 md:my-6"
       >
-        <div id="navbar-logo-container">
-          {/* TODO */}
-          yuHacks(<span className="text-[#C95656]">2023</span>)
+        <div id="navbar-logo-container" className={ndot47.className}>
+          {/* TODO - add logo */}
+          yuHacks<span className="text-[#C3C3C3]">(<span className="text-[#C95656]">2023</span>)</span>
         </div>
         <div 
           id="navbar-links-container"
@@ -51,9 +57,10 @@ const NavBar: FC<Props> = () => {
             id="navbar-social-container"
             className="hidden flex-row gap-3 justify-center items-center md:inline-flex"
           >
-            <Link href="#">ℹ️</Link>
-            <Link href="#">📷</Link>
-            <Link href="#">🐦</Link>
+            {/* TODO - replace emoji with icons */}
+            <Link href="https://www.linkedin.com/company/yuhacks/">ℹ️</Link>
+            <Link href="https://www.instagram.com/yuhacks/">📷</Link>
+            <Link href="https://www.threads.net/@yuhacks">🐦</Link>
           </div>
           <div 
             id="navbar-button-container"
@@ -62,15 +69,16 @@ const NavBar: FC<Props> = () => {
             <div 
               id="navbar-cta-button"
               className="bg-[#C95656] text-[#FDFDFD] text-[14px] rounded-[32px] px-4 py-1"
+              // TODO - add link to portal
             >
-              {/* TODO */}
-              <div>Portal</div>
+              <span>Portal -&gt;</span>
+              {/* TODO - add portal icon */}
             </div>
             <div 
               id="navbar-collapse-button"
               className="md:hidden"
             >
-              {/* TODO */}
+              {/* TODO - replace emoji with custom icon */}
               <span>🍔</span>
             </div>
           </div>
