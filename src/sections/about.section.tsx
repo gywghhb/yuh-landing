@@ -7,9 +7,9 @@ import { ndot47 } from "@/utils/font-loader";
 interface Props {}
 
 const AboutSection: FC<Props> = () => {
-  const titleStyle = ndot47.className + " text-4xl mb-10"
+  const titleStyle = ndot47.className + " text-4xl mb-10 max-w-[460px]"
   const subtitleStyle = ndot47.className + " text-[14px] text-[#C3C3C3] mb-1"
-  const pStyle = "text-[#A7A7A7] mb-4"
+  const pStyle = "text-[#A7A7A7] mb-4 max-w-[600px]"
 
   return (
     <section id="about">
