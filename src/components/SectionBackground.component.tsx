@@ -19,7 +19,7 @@ interface Props {
  */
 const SectionBackground: FC<Props> = ({ children, id, className }) => {
   const style =
-    "flex bg-[#FDFDFD] rounded-[32px] md:rounded-[42px] w-[100%] " + className;
+    "flex bg-[#FDFDFD] rounded-[32px] md:rounded-[42px] w-full " + className;
 
   return (
     <div id={id} className={style}>

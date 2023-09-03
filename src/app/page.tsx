@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar.component";
 import AboutSection from "@/sections/about.section";
 import EventSection from "@/sections/events.section";
+import Footer from "@/sections/footer.section";
 import HeroSection from "@/sections/hero.section";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <EventSection />
+      <Footer />
     </main>
   )
 }
