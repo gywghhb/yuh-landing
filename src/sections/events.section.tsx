@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import SectionContainer from "@/components/SectionContainer.component";
 import SectionBackground from "@/components/SectionBackground.component";
 import { ndot47 } from "@/utils/font-loader";
-import ExpandableCard from "@/components/event-card.component";
+import ExpandableCard from "@/components/expandable-card.component";
 
 interface Props {}
 
