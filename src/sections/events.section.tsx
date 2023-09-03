@@ -41,8 +41,8 @@ const EventCard: FC<EventCardProps> = ({
 };
 
 const EventSection: FC<Props> = () => {
-  const titleStyle = ndot47.className + " text-4xl mb-10 max-w-[560px]";
-  const subtitleStyle = ndot47.className + " text-[14px] text-[#C3C3C3] mb-1";
+  const titleStyle = ndot47.className + " text-4xl mb-10 max-w-[560px] mt-4";
+  const subtitleStyle = ndot47.className + " text-[14px] text-[#C3C3C3]";
   const pStyle = "text-[#A7A7A7] mb-4 max-w-[800px]";
 
   return (
@@ -53,7 +53,7 @@ const EventSection: FC<Props> = () => {
             id="event-text-container"
             className="mx-6 mt-12 md:mx-14 md:mt-14"
           >
-            <span className={subtitleStyle}>&gt; EVENT</span>
+            <span className={subtitleStyle}>&gt; EVENT DETAIL</span>
             <h1 className={titleStyle}>
               Protytype, Program,{" "}
               <span className="text-[#58A0D4]">Present</span> Your Next Grand
