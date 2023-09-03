@@ -19,7 +19,7 @@ const ExpandableCard: FC<Props> = ({id, children, className}) => {
   return (
     <div
       id={id}
-      className={`shadow-lg bg-[#FDFDFD] p-10 rounded-2xl ${className}`}
+      className={`shadow-lg bg-[#FDFDFD] rounded-2xl ${className}`}
     >
       {children}
     </div>

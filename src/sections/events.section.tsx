@@ -8,6 +8,7 @@ import ExpandableCard from "@/components/expandable-card.component";
 interface Props {}
 
 interface EventCardProps {
+  id?: string | undefined,
   title: string;
   titleIcon?: React.ReactNode | null;
   description: string;
@@ -16,6 +17,7 @@ interface EventCardProps {
 }
 
 const EventCard: FC<EventCardProps> = ({
+  id,
   title,
   titleIcon,
   description,
@@ -23,14 +25,17 @@ const EventCard: FC<EventCardProps> = ({
   className,
 }) => {
   return (
-    <ExpandableCard className={className}>
-      <div className="flex flex-col">
-        <div className="flex shrink-0">
-          {titleIcon}
+    <ExpandableCard className={`${className}`}>
+      <div id={id} className="flex flex-col px-10 pt-10">
+        <div className="flex flex-row">
+          <div className="flex shrink-0">
+            {titleIcon}
+          </div>
+          <h5 className={`${ndot47.className} text-xl`}>{title}</h5>
         </div>
-        <h5 className="">{title}</h5>
+        <p className="text-[#A7A7A7] mt-2 mb-6">{description}</p>
       </div>
-      <p>{description}</p>
+      {body}
     </ExpandableCard>
   );
 };
@@ -65,10 +70,32 @@ const EventSection: FC<Props> = () => {
             className="mx-6 mb-12 mt-8 md:mx-14 md:mb-14"
           >
             {/* TODO */}
-            <div>
+            <div 
+              id="event-cards-container"
+              className="flex flex-row gap-4 mb-4"
+            >
               <EventCard 
-                title="Title"
-                description="This is a description."
+                title="Schedule"
+                description="This is a description on schedule."
+                className={"grow"}
+              />
+              <EventCard 
+                title="Neworking"
+                description="This is a description on networking events."
+              />
+            </div>
+            <div 
+              id="event-cards-container"
+              className="flex flex-row gap-4"
+            >
+              <EventCard 
+                title="Schedule"
+                description="This is a description on schedule."
+              />
+              <EventCard 
+                title="Neworking"
+                description="This is a description on networking events."
+                className={"grow"}
               />
             </div>
           </div>
