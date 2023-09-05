@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { FC } from "react";
-import SectionContainer from "./SectionContainer.component";
+import SectionContainer from "./section-container.component";
 import { ndot47 } from "@/utils/font-loader";
 
 interface Props {

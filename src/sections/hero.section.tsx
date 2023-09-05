@@ -1,11 +1,10 @@
 import React, { FC } from "react";
 
-import SectionContainer from "@/components/SectionContainer.component";
+import SectionContainer from "@/components/section-container.component";
 import { ndot47 } from "@/utils/font-loader";
 
-interface Props {}
 
-const HeroSection: FC<Props> = () => {
+const HeroSection: FC= () => {
   const titleStyle = "text-[#FDFDFD] text-[40px] md:text-[64px] mb-4 md:leading-tight " + ndot47.className 
 
   return (

@@ -10,12 +10,12 @@ const SectionContainer: FC<Props> = ({children, className, id}) => {
   const style = "flex mx-2 sm:mx-4 md:mx-12 " + className;
 
   return (
-    <div 
+    <section 
       id={id}
       className={style}
     >
       {children}
-    </div>
+    </section>
   )
 }
 

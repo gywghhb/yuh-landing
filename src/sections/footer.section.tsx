@@ -1,12 +1,9 @@
 import React, { FC } from "react";
 
-import SectionContainer from "@/components/SectionContainer.component";
+import SectionContainer from "@/components/section-container.component";
 
-// import { ndot47 } from "@/utils/font-loader";
 
-interface Props {}
-
-const Footer: FC<Props> = () => {
+const Footer: FC = () => {
 
   return (
     <SectionContainer>

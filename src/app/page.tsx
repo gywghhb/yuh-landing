@@ -3,6 +3,7 @@ import AboutSection from "@/sections/about.section";
 import EventSection from "@/sections/events.section";
 import Footer from "@/sections/footer.section";
 import HeroSection from "@/sections/hero.section";
+import SponsorsSection from "@/sections/sponsors.section";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <EventSection />
+      <SponsorsSection />
       <Footer />
     </main>
   )
