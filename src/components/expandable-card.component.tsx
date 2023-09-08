@@ -1,5 +1,7 @@
 import { FC } from "react";
 
+import { motion } from "framer-motion"
+
 interface Props {
   id?: string | undefined,
   children?: React.ReactNode | null,
@@ -17,12 +19,12 @@ interface Props {
 const ExpandableCard: FC<Props> = ({id, children, className}) => {
 
   return (
-    <div
+    <motion.div
       id={id}
       className={`shadow-lg bg-[#FDFDFD] rounded-2xl ${className}`}
     >
       {children}
-    </div>
+    </motion.div>
   )
 }
 
